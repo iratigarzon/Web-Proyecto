@@ -1,0 +1,27 @@
+.text{
+	width: 20%;
+	align-items: center;
+	left: 18%;
+	position: absolute; /*making the text absolute it will make it relative to the parent, in this case container*/
+	font-size: 2.5vw;
+	color: white;
+	opacity:1;
+}
+
+.row {
+	margin-left: 3%;
+	width: 100%;
+	display: flex;
+	z-index: 1; /*z index used to specify the order of visualization*/
+}
+.image{
+  position: relative;
+  width:  80%;
+  height: auto;
+}
+.image:hover {
+	transform:matrix(1.2,0,0,1.2,0,0); /*makes the image bigger*/
+	transition: .5s ease; /*adds easing whem making the images larger*/
+	opacity: 0.2;
+}
+
