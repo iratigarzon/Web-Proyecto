@@ -58,13 +58,11 @@ a {
 		border-radius: 1em;
 		position: absolute;
 		background: #fb7230;
-		/*#c75a26*/
 		text-transform: capitalize;
 		font-size: 1em;
 	}
 
 	&:hover {
-
 		.menu {
 			opacity: 100%;
 			color: #82d1ff;
@@ -72,7 +70,6 @@ a {
 
 		.proyecto,
 		.recursos {
-
 			height: fit-content;
 
 			a:hover {
@@ -80,15 +77,31 @@ a {
 				opacity: 100%;
 				color: #82d1ff;
 			}
-
 		}
 	}
 }
 
 main {
-	p, li {
+
+	p,
+	li {
 		text-align: justify;
 		font-size: 1.2em;
+	}
+
+	.subrayado {
+		border-bottom: 1px solid black;
+	}
+
+	.inner {
+		color: black;
+		transition: all 0.25s ease;
+
+		&:hover {
+			color: black;
+			font-size: 0.5em;
+			padding-left: 1em;
+		}
 	}
 }
 
@@ -115,6 +128,7 @@ footer {
 .home {
 	h1 {
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	img {
@@ -125,7 +139,12 @@ footer {
 
 .origen-contexto {}
 
-.objetivos {}
+.objetivos {
+	ol li {
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+	}
+}
 
 .tareas {}
 
@@ -140,11 +159,12 @@ footer {
 .seguimiento {}
 
 .nosotros {
-	ul{
+	ul {
 		list-style: outside;
 		list-style-type: '\2014   ';
 	}
-	.a-quien{
+
+	.a-quien {
 		background: white;
 	}
 }
