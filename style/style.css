@@ -132,8 +132,48 @@ footer {
 	}
 
 	img {
-		max-height: 600px;
-		max-width: 400px;
+		max-width: 1000px;
+		width: 100%;
+	}
+
+	.home-refs {
+		color: black;
+		text-decoration: underline;
+		transition: all 0.25s ease;
+
+		&:hover {
+			color: #fb7230;
+			text-decoration: none;
+		}
+	}
+	div span:has(span.contact){
+		height:fit-content;
+	}
+
+	.contact {
+		background: #b7b7b7;
+		max-height: 400px;
+		height: 25em;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		a {
+			color: black;
+			text-decoration: underline;
+			font-size: 1.2em;
+			transition: all 0.25s ease;
+
+			&:hover {
+				color: #c75a26;
+				text-decoration: none;
+			}
+		}
+		iframe{
+			width: -webkit-fill-available;
+			height: -webkit-fill-available;
+		}
 	}
 }
 

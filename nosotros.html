@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<header class="d-flex justify-content-around align-items-center py-3 mb-5">
+	<header class="d-flex justify-content-around align-items-center py-3 mb-5 sticky-top">
 		<div class="item d-flex justify-content-center py-3">
 			<a href="#" class="menu">Proyecto</a>
 			<span class="proyecto flex-column px-3">
@@ -64,9 +64,9 @@
 				</span>
 			</span>
 
-			<span class="d-flex flex-wrap col-12 pt-5 a-quien">
+			<span class="d-flex flex-wrap col-12 pt-5 a-quien" id="kids">
 				<span class="d-flex flex-wrap container mb-3">
-					<h2 class="subrayado col-12 mb-4">&iquest;A qui&eacute;n va dirigido?</h2>
+					<h2 class="subrayado col-12 mb-4" id="teen">&iquest;A qui&eacute;n va dirigido?</h2>
 					<span class="px-3">
 						<p>ByteBuddies est&aacute; dise&ntilde;ado para j&oacute;venes entusiastas que desean formarse
 							en este apasionante sector. Para ello, ofrecemos dos experiencias adaptadas a diferentes
@@ -92,25 +92,24 @@
 			</span>
 			<span class="d-flex flex-wrap container mb-5 pt-5">
 				<h2 class="subrayado col-12 mb-4">&iquest;C&oacute;mo nos adaptamos a nuestro p&uacute;blico objetivo?
-					<b>[?]</b>
 				</h2>
 				<span class="px-3">
 					<p>Sabemos que no todos tenemos las mismas capacidades que el resto, alguien puede ser m&aacute;s
 						&aacute;gil que otro a la hora de realizar cualquier actividad, al igual que se le puede dar mal
 						realizar otras. Dentro de lo que cabe, todos somos humanos y no somos perfectos en todo lo que
 						hacemos.</p>
-					<p>Por eso nuestra aplicaci&oacute;n tiene en cuenta las dificultades que podr&iacute;a tener
+					<p>Por eso nuestra aplicaci&oacute;n tiene en cuenta las dificultades que podr&iacute;an tener
 						nuestros usuarios, adaptando nuestro contenido a las necesidades que necesite, facilitando
 						as&iacute; su aprendizaje.
 					</p>
 					<p>Al ser nuestro contenido digital, todos los alumnos con dificultad para escribir no
-						tendr&aacute;n ning&uacute;n problema. Nuestros usuarios podr&aacute;n elegir c&oacute;mo
-						recibir sus apuntes, ya sea por escrito como por audio o v&iacute;deo, permitiendo una
-						experiencia adecuada a las necesidades y preferencias de los alumnos y facilitando el estudio
-						sin obst&aacute;culos a los ni&ntilde;os y adolescentes con dificultades auditivas, con
-						dificultades visuales o con dificultades de aprendizaje visual. Adem&aacute;s, despu&eacute;s de
-						cada lecci&oacute;n, se ofrecen actividades de refuerzo para ayudar a retener mejor la
-						teor&iacute;a aprendida, dejando un comentario al final de &eacute;stas para motivar al alumno.
+						tendr&aacute;n ning&uacute;n problema. Adem&aacute;s, todos los niveles de aprendizaje
+						contar&aacute;n con una versi&oacute;n en la que las explicaciones sean m&aacute;s
+						desarrolladas, esto se puede entender como una versi&oacute;n &quot;tutorial&quot; del nivel.
+						&Eacute;sta opci&oacute;n estar&aacute; presente en la configuraci&oacute;n del perfil personal
+						y estar&aacute; activada por defecto. Si la aplicaci&oacute;n detecta que el usuario avanza con
+						facilidad, se le sugerir&aacute; desactivar &eacute;sta opci&oacute;n. Del mismo modo, si el
+						usuario avanza con mayor dificultad, se sugerir&aacute; volver a activarla si no lo est&aacute;.
 					</p>
 					<p>Con cada pr&aacute;ctica, el usuario gana &quot;puntos de experiencia&quot;. El usuario puede
 						subir de nivel si alcanza una cantidad de puntos de experiencia. Tambi&eacute;n puede conseguir
@@ -133,7 +132,7 @@
 			<a href="bibliografia.html" alt="Bibliografía">Bibliograf&iacute;a</a>
 		</div>
 		<div class="socials col-4 d-flex flex-wrap justify-content-center">
-			<p class="w-100">S&iacute;guenos en nuestras redes!</p>
+			<p class="w-100">Contacta con nosotros!</p>
 			<span class="w-50 d-flex justify-content-evenly">
 				<a href="https://www.instagram.com/bytebuddies.official?utm_source=qr&igsh=MTZzNWZyc2Rta2E2eA=="
 					target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -147,10 +146,17 @@
 						<path
 							d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
 					</svg></a>
+				<a href="mailto:bytebuddies.sup@gmail.com" alt="Email ByteBuddies">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-envelope-paper" viewBox="0 0 16 16">
+						<path
+							d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+					</svg>
+				</a>
 			</span>
 		</div>
 		<div class="col-4">
-			<p>Copyright 2024 &copy; ByteBuddies</p>
+			<p>&copy; ByteBuddies 2024</p>
 		</div>
 	</footer>
 </body>
