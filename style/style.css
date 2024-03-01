@@ -146,8 +146,9 @@ footer {
 			text-decoration: none;
 		}
 	}
-	div span:has(span.contact){
-		height:fit-content;
+
+	div span:has(span.contact) {
+		height: fit-content;
 	}
 
 	.contact {
@@ -170,7 +171,8 @@ footer {
 				text-decoration: none;
 			}
 		}
-		iframe{
+
+		iframe {
 			width: -webkit-fill-available;
 			height: -webkit-fill-available;
 		}
@@ -179,22 +181,50 @@ footer {
 
 .origen-contexto {}
 
-.objetivos {
+.objetivos,
+.tareas {
 	ol li {
 		padding-top: 0.75em;
 		padding-bottom: 0.75em;
 	}
 }
 
-.tareas {}
+.tareas {
+	h2 {
+		text-transform: capitalize;
+	}
+
+	ol {
+		padding-left: 0 !important;
+		li {
+			margin-right: 3rem !important;
+			margin-left: 3rem !important;
+		}
+	}
+}
 
 .cronograma {}
 
-.rec-humanos {}
+.rec-humanos {
+	iframe {
+		height: 205px;
+		width: 717px;
+	}
+}
 
-.rec-materiales {}
+.rec-materiales {
+	iframe {
+		height: 185px;
+		width: 725px;
+	}
+}
 
-.presupuesto {}
+.presupuesto {
+	iframe {
+		height: 1740px;
+		width: 1060px;
+	}
+}
 
 .seguimiento {}
 
