@@ -203,7 +203,15 @@ footer {
 	}
 }
 
-.cronograma {}
+.cronograma {
+	iframe{
+		height: 450px;
+		width: 680px;
+	}
+	img {
+		max-width: 1000px;
+	}
+}
 
 .rec-humanos {
 	iframe {
@@ -220,9 +228,13 @@ footer {
 }
 
 .presupuesto {
-	iframe {
-		height: 1740px;
+	iframe#general {
+		height: 2295px;
 		width: 1060px;
+	}
+	iframe#material{
+		height: 200px;
+		width: 595px;
 	}
 }
 
