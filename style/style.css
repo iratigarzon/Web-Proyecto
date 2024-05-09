@@ -1,5 +1,13 @@
 @import url("bootstrap.css");
 
+* a {
+	transition: all 0.25s ease;
+
+	:hover {
+		transition: all 0.25s ease;
+	}
+}
+
 body {
 	background: #ebebeb;
 	font-family: public Sans, "Roboto Condensed", Calibri, Cambria, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -95,12 +103,14 @@ main {
 
 	.inner {
 		color: black;
-		transition: all 0.25s ease;
 
 		&:hover {
 			color: black;
-			font-size: 0.5em;
-			padding-left: 1em;
+
+			span {
+				font-size: 0.5em;
+				padding-left: 1em;
+			}
 		}
 	}
 }
@@ -126,12 +136,16 @@ footer {
 		img {
 			max-width: 16px;
 			filter: brightness(100);
-			transition: all 0.25s ease;
+			transition: filter 0.25s ease;
 		}
 
 		&:hover {
 			color: #fb7230;
 			transition: all 0.25s ease;
+
+			img {
+				transition: filter 0.25s ease;
+			}
 		}
 	}
 }
