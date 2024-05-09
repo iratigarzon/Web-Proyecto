@@ -112,9 +112,27 @@ footer {
 	padding: 5%;
 	text-align: center;
 
-	a:hover {
-		color: #fb7230;
-		transition: all 0.25s ease;
+	a {
+		max-width: 16px;
+
+		&:has(img):hover img {
+			filter: none;
+		}
+
+		&:has(.bi-twitter):hover {
+			color: #1da1f2;
+		}
+
+		img {
+			max-width: 16px;
+			filter: brightness(100);
+			transition: all 0.25s ease;
+		}
+
+		&:hover {
+			color: #fb7230;
+			transition: all 0.25s ease;
+		}
 	}
 }
 
@@ -179,6 +197,8 @@ footer {
 	}
 }
 
+footer {}
+
 .origen-contexto {}
 
 .objetivos,
@@ -196,6 +216,7 @@ footer {
 
 	ol {
 		padding-left: 0 !important;
+
 		li {
 			margin-right: 3rem !important;
 			margin-left: 3rem !important;
@@ -204,10 +225,11 @@ footer {
 }
 
 .cronograma {
-	iframe{
-		height: 450px;
-		width: 680px;
+	iframe {
+		height: 505px;
+		width: 705px;
 	}
+
 	img {
 		max-width: 1000px;
 	}
@@ -232,7 +254,8 @@ footer {
 		height: 2295px;
 		width: 1060px;
 	}
-	iframe#material{
+
+	iframe#material {
 		height: 200px;
 		width: 595px;
 	}
